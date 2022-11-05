@@ -24,24 +24,24 @@ $result = $collection->find();
                             <th scope="col">Birthdate</th>
                             <th scope="col">Address</th>
                             <th scope="col">Program</th>
+                            <th scope="col">Contact Number</th>
                             <th scope="col">Emergency Contact</th>
                         </tr>
-                        <?php
-                            foreach($result as $studentInf) {
+                        <?php 
+                            foreach ($result as $studentInf){
                         ?>
                         <tr>
-                            <th scope="row"><?php echo $studentInf['studentId']; ?></td>
+                            <th scope = "row"><?php echo $studentInf['studentId']?></th>
                             <td><?php echo $studentInf['firstName']; ?></td>
+                            <td><?php echo $studentInf['lastName']; ?></td>
                             <td><?php echo $studentInf['birthdate']; ?></td>
                             <td><?php echo $studentInf['address']; ?></td>
                             <td><?php echo $studentInf['program']; ?></td>
-                            <td><?php echo $studentInf['contact Number']; ?></td>
-                            <td><?php echo $studentInf['emergency Contact']; ?></td>
+                            <td><?php echo $studentInf['contactNumber']; ?></td>
+                            <td><?php echo $studentInf['emergencyContact']; ?></td>
                         </tr>
-                        
-                        <?php
-                        }
-                        ?>
+                    <?php 
+                        }?>
                     </table>
                 </div>
             </div>
