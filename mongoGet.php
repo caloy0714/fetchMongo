@@ -30,7 +30,7 @@ $result = $collection->find();
                             foreach($result as $studentInf) {
                         ?>
                         <tr>
-                            <th scope="row"><?php echo $studentInf['studentID']; ?></td>
+                            <th scope="row"><?php echo $studentInf['studentId']; ?></td>
                             <td><?php echo $studentInf['firstName']; ?></td>
                             <td><?php echo $studentInf['birthdate']; ?></td>
                             <td><?php echo $studentInf['address']; ?></td>
